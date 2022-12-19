@@ -1,23 +1,16 @@
 {
-  "name": "lighthouse-ci-server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LinYi-Taiwan/lighthouse-ci-server.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LinYi-Taiwan/lighthouse-ci-server/issues"
-  },
-  "homepage": "https://github.com/LinYi-Taiwan/lighthouse-ci-server#readme",
-  "dependencies": {
-    "@lhci/server": "^0.10.0",
-    "sqlite3": "^5.1.4"
-  }
+    "name": "lh-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "lhci server --storage.storageMethod=sql --storage.sqlDialect=sqlite --storage.sqlDatabasePath=./db.sql --port=8000"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@lhci/server": "^0.9.0",
+        "sqlite3": "^5.0.4"
+    }
 }

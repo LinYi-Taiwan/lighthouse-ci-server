@@ -6,6 +6,6 @@ createServer({
     storage: {
         storageMethod: "sql",
         sqlDialect: "sqlite",
-        sqlDatabasePath: "/path/to/db.sql",
+        sqlDatabasePath: "./db.sql",
     },
 }).then(({ port }) => console.log("LHCI listening on port", port));
