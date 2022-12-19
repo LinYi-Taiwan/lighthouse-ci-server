@@ -13,5 +13,8 @@
     "devDependencies": {
         "@lhci/server": "^0.9.0",
         "sqlite3": "^5.0.4"
+    },
+    "dependencies": {
+        "@vercel/node": "^2.8.1"
     }
 }
